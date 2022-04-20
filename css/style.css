@@ -1,0 +1,24 @@
+* {
+
+    padding: 0px;
+    
+    margin: 0px;
+    
+    box-sizing: border-box;
+    }
+
+a {
+    color:#F2AEC7;
+}
+
+body {
+    background-color:#0D0D0D;
+}
+
+p {
+    color:#F2F2F2
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: darkgray;
+}
