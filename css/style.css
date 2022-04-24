@@ -1,32 +1,98 @@
 * {
-
-    padding: 0px;
-    
-    margin: 0px;
-    
+    padding: 0px;  
+    margin: 0px;  
     box-sizing: border-box;
     }
 
 
-
-a {
-    color:#F2AEC7;
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    }
+#vidSource {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #656565;
+    width: 100%;
+    padding: 10px;
+}
+#vidSource a {
+    color:#b15275;
+    text-decoration: none;
 }
 
-body {
+
+#navigation ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: rgb(76, 8, 26);
+    height: 20px;
+}
+#navigation a {
+    display: block;
+    padding: 20px;
+    top: 0;
+    position:relative;
+    font-size: 1.2rem;
+    text-align: center;
+    color:#ff7d9c;
+    background-color: rgb(25, 25, 25);
+    text-decoration: none;
+    box-shadow: 0 0 0 black;
+    transition: top .5s, box-shadow .5s, background-color .5s, color .5s;
+}
+#navigation ul a:hover {
+    color: #F2F2F2;
+    background-color: rgb(76, 8, 26);
+    box-shadow: 0 5px 5px black;
+    top: 10px;
+}
+
+
+#mainContentContainer {
+    position: absolute;
+    overflow: scroll;
+    overflow-x: hidden;
     margin: auto;
-    align-content: center;
+    top: 80px;
+    bottom: 50px;
+    left: 100px;
+    right: 100px;
     max-width: 500px;
-    background-color:#161616;
+    min-width: 400px;
+    /* background-color:#2c0610dc; */
+    background-image: linear-gradient(180deg, #5b0c21d6, rgba(0, 0, 0, 0.874));
     padding: 10px;
+    border: solid #ff7d9b80;
+    border-radius: 10px;
+}
+#mainContentContainer h2, h3, h4, h5, h6 {
+    color: #ff324d;
+    padding: 10px
+}
+#mainContentContainer h1 {
+    color:#ff7d9c;
+    
+    text-align: center;
 }
 
-p {
-    color:#F2F2F2;
-    padding: 10px;    
-}
 
-h1, h2, h3, h4, h5, h6 {
-    color: #518557;
-    padding: 10px;
+#blogPosts p {
+    color: #f2f2f2;
+    padding: 5px;
+    padding-left: 25px;
+}
+#blogPosts ul {
+    color: #c49595;
+    padding: 2px;
+    padding-left: 35px;
+    list-style-type: circle;
 }
