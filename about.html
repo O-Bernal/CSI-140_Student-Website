@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTC CSI140 Student Website - About</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="background">
+        <video id="background-video" autoplay loop muted poster="video/QikaNugroho-liveWallpaper.png">
+            <source src="video/QikaNugroho-liveWallpaper.mp4" type="video/mp4">
+          </video>
+        <div id="vidSource">
+            <p>Live wallpaper by <a href="https://pixabay.com/users/qika_nugroho-23788984/?tab=videos" target="_blank">Qika Nugroho</a> from <a href="https://pixabay.com/" target="_blank">Pixabay</a>.</p>
+        </div>
+    </div>
+
+    <div id="navigation">
+        <ul>
+            <li></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div id="mainContentAbout">
+        <div id="mainContentContainer">
+            <div id="mainContentContainerHeader">
+                <h1>About Me</h1>
+                <p>Thinking of making this a profile card that floats left of the about me content.</p>
+            </div>
+        </div>
+        <div id="sideContent">
+            <h2>Side aboutme Stuff</h2>
+            <div class="blogPosts">
+                <p>Some about me info...</p>
+            </div>
+            <button class="collapsible"><h3>Collapsed long long test</h3></button>
+            <div class="content">
+                <p>This content.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.takes many lines.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+    </script>
+</body>
+</html>

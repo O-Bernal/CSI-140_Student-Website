@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTC CSI140 Student Website - Blogs</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="background">
+        <video id="background-video" autoplay loop muted poster="video/QikaNugroho-liveWallpaper.png">
+            <source src="video/QikaNugroho-liveWallpaper.mp4" type="video/mp4">
+          </video>
+        <div id="vidSource">
+            <p>Live wallpaper by <a href="https://pixabay.com/users/qika_nugroho-23788984/?tab=videos" target="_blank">Qika Nugroho</a> from <a href="https://pixabay.com/" target="_blank">Pixabay</a>.</p>
+        </div>
+    </div>
+
+    <div id="navigation">
+        <ul>
+            <li></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div id="mainContentBlogs">
+        <div id="mainContentContainer">
+            <div id="mainContentContainerHeader">
+                <h1>RTC - CSI 140 Changelog</h1>
+            </div>
+            <div class="blogPosts">
+                <button class="collapsible"><h3>5/12/2022</h3></button>
+                <div class="content">
+                    <p>So it's been 3 weeks since my last update. Not that I need to explain the time gap, but I was focused on everything but working on this web project. Heh... anyways!<br>Things that i've changed: <br>-the nav bar should be working fully now. All buttons go to their respective pages. <br>-The nav bar was slightly redesigned (probably won't be noticed) <br>-the organization of content across the webpages was reorganized <br>-all pages have uniform design, but content is mostly WIP still <br>-added a RSS feed using rss.app to get some cool articles from google tech news feed sent straight to this easy to insert widget. So that's neat! <br>Now... things that still need to be done...<br></p>
+                        <ul>Improve or finish the homepage welcome message or add a splash page or something</ul>
+                        <ul>Fill content for the About Me page. Possibly add a profile page similar to what's seen on other social media websites</ul>
+                        <ul>Rough draft or think of ideas for the portfolio page</ul>
+                        <ul>Add social media links to the contact page. (linkedin and indeed in particular)</ul>
+                        <ul>Fix some visual bugs where the child div is overflowing past the parent div when body overflow is set to hidden</ul>
+                        <ul>Fix overflow auto not showing on child divs when the content is longer than parent div</ul><br>
+                    <p>To be honest I'm getting headaches just thinking of the amount of work I still wish to put into this project, but we'll see how it goes. Some of my beginner code is already making it difficult to implement changes so I might not make much progress.</p>
+                </div>
+                <button class="collapsible"><h3>4/23/2022</h3></button>
+                <div class="content">
+                    <p>More things learned. Div/Span/Class/ID. I spent half a day messing around with this blog trying to implement these very important HTML concepts as well as other things I noticed such as the navigation bar my instructor was showing us. I got the page looking the way I want it to so far, but part of me can't help but wonder if my code accomplished this in a roundabout way. Either way I'll pause here for today. Things to do still:<br>
+                        <ul>Add pages to navigation bar.</ul>
+                        <ul>Continue thinking about what exactly I want on this website of mine.</ul>
+                        <ul>Work on Project 3 - Portfolio</ul>
+                        <ul>Sleep, repeat.</ul></p>
+                </div>
+
+                <button class="collapsible"><h3>4/20/2022 [2 of 2]</h3></button>
+                <div class="content">
+                    <p>Shortly after getting this blog live, I started reviewing the materials taught in Tuesday's class and now know about style sheets. I've always been a fan of dark mode on every site, so you can bet my websites will be dark mode themed where I can apply it.</p>
+                </div>
+
+                <button class="collapsible"><h3>4/20/2022 [1 of 2]</h3></button>
+                <div class="content">
+                    <p>Just a random start to my blog. While this is not my first time learning HTML, the computer science program here at RTC has gotten me more heavily invested into programming overall. I've learned some basics with Python, SQL, and C# so far. (Although at this time I couldn't call myself proficient in any of those.)
+                    <br><br>
+                    I've never really written a blog before so I'll honestly just go about this in a free form, diary style info dump and keep it informal.
+                    <br><br>
+                    As the titles says, this is a WIP and i'll be reorganizing and styling my blog as time progresses and I learn more. In the first two weeks i've already learned several different HTML tags from header to body, inlines, anchors, and so on.</p>
+                </div>             
+            </div>
+        </div>
+        <div id="sideContent">
+            <h1>RSS Feed</h1>
+            <div id="RSSfeed">
+                <rssapp-wall id="fji3o0sj82WkkyGZ"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+            </div>
+        </div>
+    </div>
+<!-- Some cool JS borrowed from W3 schools to make the collapsable buttons work. -->
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+    </script>
+</body>
+</html>
