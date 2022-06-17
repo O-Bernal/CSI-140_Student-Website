@@ -81,6 +81,7 @@
     display: grid;
     grid-template-columns: auto auto;
     min-width: fit-content;
+    height: 86vh;
     max-height: 87%;
     margin: 0 auto;
     gap: 15px;
@@ -91,11 +92,12 @@
 }
 #mainContentBlogs {
     display: grid;
-    grid-template-columns: auto 25%;
+    grid-template-columns: auto 65%;
     min-width: fit-content;
+    height: 86vh;
     max-height: 87%;
     margin: 0 auto;
-    gap: 15px;
+    gap: 2%;
     padding: 2% 10% 0 10%;
     /* border-style: solid;
     border-color: #F2F2F2;
@@ -134,12 +136,10 @@
     color: #ff7d9c;
     overflow: auto;
     overflow-x: hidden;
-    margin: auto;
     background-image: linear-gradient(180deg, #5b0c21d6, rgba(0, 0, 0, 0.874));
     padding: 10px;
     border: solid #ff003c80;
     border-radius: 10px;
-    box-sizing: border-box;
 }
 #RSSfeed {
     border: solid #ff7d9b80;
