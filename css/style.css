@@ -16,7 +16,7 @@
     top: 0;
     bottom: 0;
     z-index: -1;
-    }
+}
 #vidSource {
     position: fixed;
     bottom: 0;
@@ -67,10 +67,11 @@
     display: grid;
     grid-template-columns: auto;
     min-width: fit-content;
-    max-height: 87%;
+    height: 87vh;
     margin: 0 auto;
     gap: 15px;
     padding: 2% 20% 0 20%;
+    position: fixed;
     /* temp border for troubleshooting */
     /* border-style: solid;
     border-color: #F2F2F2;
@@ -100,7 +101,7 @@
     border-color: #F2F2F2;
     box-sizing: border-box; */
 }
-#mainContentPortfolio {
+/* #mainContentPortfolio {
     display: grid;
     grid-template-columns: auto;
     min-width: fit-content;
@@ -108,7 +109,7 @@
     margin: 0 auto;
     gap: 15px;
     padding: 2% 20% 0 20%;
-}
+} */
 #mainContentContainer {
     max-height: 100%;
     overflow: auto;
@@ -188,4 +189,78 @@ padding: 0 5px;
 max-height: 0;
 overflow: hidden;
 transition: max-height 0.4s ease-out;
+}
+
+/*Portfolio Page ID's and Classes
+
+    I am creating separate ids and classes for this page simply because I feel
+    like the structure on the rest of the website is restricting or not working 
+    how i want it to work and it is sort of mentally road blocking me. Starting 
+    fresh helps me progress the portfolio section of my website. 
+*/
+#portfolioContainerWrap {
+    /* background-color: #f2f2f2; */
+    position: fixed;
+    height: 85vh;
+    width: 60vw;
+    margin: 10px 20%;
+}
+#portfolioContainer {
+    /* background-color: #656565; */
+    background-image: linear-gradient(180deg, #5b0c21d6, rgba(0, 0, 0, 0.874));
+    border: solid #ff003c80;
+    border-radius: 10px;
+    position: relative;
+    height: 84vh;
+    min-height: 83vh;
+    max-height: 85vh;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#portfolioHeader h1 {
+    background-image: linear-gradient(180deg, #ff0044ad, rgba(0, 0, 0, 0.13));
+    color:#ffbad5;
+    text-align: center;
+    margin: 15px;
+    margin-bottom: 0;
+    border-bottom: 2px solid #ff003c80;
+    border-radius: 0 10px 10px 10px;
+}
+#portfolioShowcase {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* background-color: #868686; */
+    height: auto;
+    min-height: 100%;
+    margin: 1%;
+    overflow-y: scroll;
+    padding: 5% 5%;
+    gap: 5%;
+    border-top: 4px solid rgba(0, 0, 0, 0.200);
+}
+.showcasePreview {
+    /* background-color: #780b28; */
+    background-image: linear-gradient(180deg, #ff0044ad, rgba(0, 0, 0, 0.564));
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border-bottom: 3px solid #ff003c80;
+    border-right: 3px solid #ff003c80;
+    border-radius: 10px;
+    text-align: center;
+    color: #ffbad5;
+    padding-top: 15%;
+}
+.showcasePreview:hover {
+    background-image: linear-gradient(180deg, #ff4e7ddd, rgba(60, 60, 60, 0.767));
+    border-bottom: 3px solid #ff56bbb4;
+    border-right: 3px solid #ff56bbb4;
+
+}
+.showcasePreview:active {
+    background-image: linear-gradient(180deg, #b10024c4, rgba(0, 0, 0, 0.628));
+    border-bottom: 1px solid #ff003c80;
+    border-right: 2px solid #ff003c80;
+    transform: translate(1px, 3px);
 }
